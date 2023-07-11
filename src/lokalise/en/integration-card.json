@@ -1,0 +1,17 @@
+{
+  "en": {
+    "integration-card": {
+      "integration": {
+        "labels": {
+          "soon": "Coming soon"
+        },
+        "learn-more": "Learn more"
+      },
+      "new": {
+        "hl": "Become a partner",
+        "p": "Have you developed a product that should also be integrated into Magicline?",
+        "button": "Get started"
+      }
+    }
+  }
+}

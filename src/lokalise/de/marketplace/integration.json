@@ -1,0 +1,42 @@
+{
+  "de": {
+    "integration": {
+      "cta": {
+        "activate": "Aktivieren",
+        "activate-now": "Jetzt aktivieren"
+      },
+      "error": {
+        "missing-translation": "Die Informationen auf dieser Seite sind leider noch nicht auf deine Sprache übersetzt worden."
+      },
+      "label": {
+        "soon": "Demnächst"
+      },
+      "nav": {
+        "about": "Warum $?",
+        "benefits": "Mehrwerte der Integration",
+        "functionalites": "Funktionalitäten",
+        "setup": "Schnittstelle einrichten",
+        "contact": "Kontakt"
+      },
+      "content": {
+        "about": {
+          "hl": "Über $"
+        },
+        "integration": {
+          "hl": "Schnittstelle zur Magicline",
+          "functionalities": {
+            "hl": "Wichtigste Funktionalitäten"
+          },
+          "setup": {
+            "hl": "So richtest du die Schnittstelle ein",
+            "alert": "Bitte stelle sicher, dass dein Leistungspaket der Magicline die Einrichtung einer oder mehrerer Partnerintegrationen unterstützt, um diese Schnittstelle aktivieren zu können.",
+            "activate": "$ aktivieren"
+          }
+        },
+        "related-integrations": {
+          "hl": "Ähnliche Integrationen"
+        }
+      }
+    }
+  }
+}

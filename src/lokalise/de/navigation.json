@@ -1,0 +1,37 @@
+{
+  "de": {
+    "navigation": {
+      "menu": {
+        "all-integrations": {
+          "title": "Marketplace"
+        },
+        "partner": {
+          "title": "Partner werden",
+          "list": {
+            "become-a-partner": "Jetzt Partner werden",
+            "open-api": "API Dokumentation"
+          }
+        },
+        "magicline": {
+          "title": "Warum Magicline?"
+        }
+      },
+      "footer": {
+        "list": [{
+            "title": "Cookies",
+            "link": ""
+          },{
+            "title": "Impressum",
+            "link": "https://magicline.com/de/impressum"
+          }, {
+            "title": "Datenschutz",
+            "link": "https://public.sportalliance.com/magicline/de/privacy"
+          }, {
+            "title": "AGB",
+            "link": "https://public.sportalliance.com/magicline/de/gtc"
+          }
+        ]
+      }
+    }
+  }
+}

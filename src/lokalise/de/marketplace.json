@@ -1,0 +1,28 @@
+{
+  "de": {
+    "marketplace": {
+      "meta": {
+        "title": "Marketplace",
+        "description": "Mit vielen Partnerintegrationen kannst du dank Magicline Ultimate alle Produkte und Dienstleistungen verknüpfen, die du und dein Team im Studioalltag benötigen."
+      },
+      "content": {
+        "intro": {
+          "hl": "Verknüpfe deinen Studioalltag mit der Magicline",
+          "p": "Mit vielen Partnerintegrationen kannst du dank Magicline Ultimate alle Produkte und Dienstleistungen verknüpfen, die du und dein Team im Studioalltag benötigen.",
+          "searchbar": {
+            "placeholder": "Finde Integrationen...",
+            "error": {
+              "no-results": "Leider keine Treffer"
+            }
+          }
+        },
+        "nav": {
+          "all": "Alle Integrationen",
+          "recent": "Neueste",
+          "soon": "Demnächst",
+          "categories": "Kategorie wählen"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+:root {
+  --containerWidth: 1050px;
+  --main: #{rgba(73,119,221,1)};
+  --mainTrans: #{rgba(73,119,221,.6)};
+  --mainMediumLight: #{rgba(73,119,221,.35)};
+  --mainLight: #{rgba(73,119,221,.1)};
+  --mainLightest: #{rgba(73,119,221,.03)};
+  --second: #{rgba(51,192,230,1)};
+  --secondTrans: #{rgba(51,192,230,.4)};
+  --secondInv: #{rgba(51,192,230,0)};
+  --secondLight: #A4E3F4;
+  --yellow: #fdc959;
+  --third: #{rgba(101,95,227,1)};
+  --thirdTrans: #{rgba(101,95,227,.8)};
+  --copy: #333;
+  --success: #{rgb(133,204,171)};
+  --successHighlight: #5FF7B0;
+  --error: #{rgb(255,91,88)};
+  --searchButtonWidth: 3.2rem;
+  --overlap: 2rem;
+  --navWrapper: 4.5rem;
+  --activate: #ecfcf3;
+  --soon: #FCBF00;
+}
+
+@keyframes visibility {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(1rem  + var(--navWrapper));
+
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: local(''),
+     url('./source-sans-pro-var.woff2') format('woff2 supports variations'),
+     url('./source-sans-pro-var.woff2') format('woff2-variations');
+  }
+
+
+body, input, button, textarea {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-display: swap;
+  line-height: 1.5em;
+  font-weight: 400;
+  outline: none;
+  border: none;
+}
+
+button {
+  font-size: 16px;
+  line-height: 1.4em;
+}
+
+.container {
+  position: relative;
+  width: var(--containerWidth);
+  margin: 0 auto;
+}
+
+.h1 {
+  color: var(--copy);
+  font-weight: 900;
+  font-size: 2.3rem;
+  line-height: 1.2em;
+  width: 85%;
+  margin-bottom: .9rem;
+}
+
+.slick-dots {
+  margin: 1rem 0 !important;
+  display: flex !important;
+  align-items: center;
+  position: relative !important;
+  justify-content: center;
+  bottom: 0 !important;
+  li {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+    margin: 0 .1rem !important;
+    display: block;
+    &:before {
+      content: "";
+      display:  block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      transform: scale(.3);
+      transition: .2s ease-in-out;
+      background: rgba(0,0,0,.2);
+    }
+    &:hover {
+      &:before {
+        transform: scale(.4);
+      }
+    }
+    &.slick-active {
+      &:before {
+        background: var(--main);
+        transform: scale(.75);
+      }
+    }
+    button {
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.catalogue {
+  display: flex;
+  padding-bottom: 5rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  @for $i from 1 through 10 {
+    a:nth-child(#{$i}) {
+      @media (max-width: 1179px) {
+        animation-delay: calc(.35s + (#{$i} * .1s));
+      }
+    }
+  }
+  a {
+    animation: visibility .5s .2s ease-in-out forwards;
+    opacity: 0;
+  }
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: contain;
+  object-position: center;
+}

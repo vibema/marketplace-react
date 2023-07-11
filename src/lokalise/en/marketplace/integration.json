@@ -1,0 +1,42 @@
+{
+  "en": {
+    "integration": {
+      "cta": {
+        "activate": "Activate",
+        "activate-now": "Activate now"
+      },
+      "error": {
+        "missing-translation": "Unfortunately, the information on this page has not been translated into your language yet."
+      },
+      "label": {
+        "soon": "Coming soon"
+      },
+      "nav": {
+        "about": "About $",
+        "benefits": "Benefits for you",
+        "functionalites": "Functionalities",
+        "setup": "Set up interface",
+        "contact": "Contact"
+      },
+      "content": {
+        "about": {
+          "hl": "About $"
+        },
+        "integration": {
+          "hl": "Interface to Magicline",
+          "functionalities": {
+            "hl": "Most relevant functionalities"
+          },
+          "setup": {
+            "hl": "Set up interface",
+            "alert": "Please make sure that your Magicline package supports the setup of one or multiple partner integrations in order to activate this interface.",
+            "activate": "Activate $"
+          }
+        },
+        "related-integrations": {
+          "hl": "Related integrations"
+        }
+      }
+    }
+  }
+}

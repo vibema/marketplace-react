@@ -1,0 +1,141 @@
+.header {
+  position: relative;
+  .teaser-image-wrapper {
+    position: absolute;
+    width: 100%;
+    background: #DDD;
+    height: 100%;
+    top: 0;
+    right: 0;
+    img.hero {
+      position: absolute;
+      top: 0;
+      right: 0;
+      object-fit: cover;
+      object-position: top right;
+      height: 100%;
+    }
+  }
+  article {
+    padding: 4.5rem 0 4rem;
+    width: 65%;
+  }
+
+}
+.catalogue-header {
+  padding: 1rem 0 2rem;
+  display: flex;
+  align-items: center;
+  .select {
+    display: flex;
+    fieldset {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      display: block;
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        opacity: 0;
+        &:hover, &:checked {
+          & + label {
+            button, .category-selector-wrapper {
+              background: var(--mainLight);
+            }
+          }
+        }
+      }
+      label {
+        position: relative;
+        pointer-events: none;
+        display: block;
+      }
+    }
+  }
+  .category-selector-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-right: 1.3rem;
+    padding-left: 0;
+    pointer-events: all;
+    &:after {
+      content: '';
+      display: inline-block;
+      margin-left: .25rem;
+      height: .5rem;
+      width: .5rem;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(/img/svg/arrow.svg);
+    }
+    &:hover {
+      background: var(--mainLight);
+      cursor: pointer;
+    }
+    select {
+      outline: none;
+      display: inline-block;
+      border: none;
+      font-family: inherit;
+      font-weight: 500;
+      cursor: pointer;
+      padding-left: 1rem;
+      font-size: 16px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      &:valid {
+        background: var(--color-mainLight);
+      }
+    }
+  }
+  button, select {
+    padding: .75rem 0;
+    color: rgba(0,0,0,.6);
+    background: transparent;
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+
+  button {
+    font-weight: 500;
+    position: relative;
+    transition: .2s;
+    margin-right: .5rem;
+    padding-right: 1.3rem;
+    padding-left: 1.3rem;
+    &:hover {
+      background: var(--mainLight);
+      transition: .2s;
+    }
+    &.active {
+      background: var(--mainLight);
+      color: var(--main);
+    }
+    &.favorite-integrations, &.recent-integrations  {
+      padding-left: 2rem;
+      &:before {
+        content: '';
+        position: absolute;
+        left: .9rem;
+        top: calc(50% - .5rem);
+        background: url(/img/svg/star-black.svg);
+        height: .8rem;
+        width: .8rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: .6;
+      }
+    }
+    &.recent-integrations {
+      &:before {
+        top: calc(50% - .3rem);
+        background-image: url(/img/svg/rocket.svg);
+      }
+    }
+  }
+}

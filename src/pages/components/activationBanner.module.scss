@@ -1,0 +1,111 @@
+@keyframes  blink {
+  0% {
+    background: rgba(255,255,255,.75);
+    transform: scale(1);
+  }
+  40% {
+    background: rgba(255,255,255,.75);
+    transform: scale(1);
+  }
+  60% {
+    background: var(--activate);
+    transform: scale(1.05);
+  }
+  80% {
+    background: rgba(255,255,255,.75);
+    transform: scale(1);
+  }
+  100% {
+    background: rgba(255,255,255,.75);
+    transform: scale(1);
+  }
+}
+
+.activation-button {
+  position: relative;
+  text-decoration: none;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  left: 0;
+  color: white;
+  //padding: 1rem 1.2rem;
+  min-width: 30%;
+  padding-right: 2rem;
+  gap: .8rem;
+  transition: .2s ease-in-out;
+  &:hover {
+    button {
+      &.pulsing {
+        animation: none;
+        background: var(--activate);
+      }
+    }
+  }
+  //backdrop-filter: blur(5px) brightness(.6);
+  &.small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 var(--overlap) 1.2rem;
+    .activation-logo {
+      width: 3rem;
+      height: 3rem;
+    }
+    .partner-name {
+      margin-bottom: .2rem;
+    }
+  }
+  .partner-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1.2em;
+    margin-bottom: .4rem;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .activation-logo {
+    width: 4rem;
+    transition: .2s ease-in-out;
+    display: block;
+    height: 4rem;
+    position: relative;
+    img {
+      width: 100%;
+      box-shadow: 0 2px 4px rgba(0,0,0,.3);
+      display: block;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+
+  button {
+    background: var(--soon);
+    color: var(--copy);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .7rem;
+    pointer-events: none;
+    transition: .2s ease-in-out;
+    padding: .1rem .75rem 0;
+    border-radius: 2rem;
+    line-height: 1.4em;
+    display: block;
+    &.pulsing {
+      background: rgba(255,255,255,.75);
+      animation: blink 3s ease-in-out infinite;
+    }
+  }
+
+}

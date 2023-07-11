@@ -1,0 +1,28 @@
+{
+  "en": {
+    "marketplace": {
+      "meta": {
+        "title": "Marketplace",
+        "description": "Thanks to partner integrations, you can connect all the products and services you and your team need in your studio routine using Magicline Ultimate."
+      },
+      "content": {
+        "intro": {
+          "hl": "Connect your gym with Magicline",
+          "p": "Thanks to partner integrations, you can connect all the products and services you and your team need in your studio routine using Magicline Ultimate.",
+          "searchbar": {
+            "placeholder": "Find integrations...",
+            "error": {
+              "no-results": "No matches found..."
+            }
+          }
+        },
+        "nav": {
+          "all": "All integrations",
+          "recent": "Recent",
+          "soon": "Coming soon",
+          "categories": "Choose category"
+        }
+      }
+    }
+  }
+}
